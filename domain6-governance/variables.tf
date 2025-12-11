@@ -1,7 +1,7 @@
 variable "root_email" {
   description = "Email for the management (root) account – must be unique"
   type        = string
-  default     = "your-real-email+root@gmail.com"   # ← CHANGE THIS
+  default     = "thecloudm8-scs-c03+root@outlook.com"   # ← CHANGE THIS
 }
 
 variable "member_accounts" {
@@ -11,9 +11,9 @@ variable "member_accounts" {
     email = string
   }))
   default = [
-    { name = "logging",  email = "your-real-email+logging@gmail.com" },
-    { name = "security", email = "your-real-email+security@gmail.com" },
-    { name = "dev",      email = "your-real-email+dev@gmail.com" },
-    { name = "prod",     email = "your-real-email+prod@gmail.com" }
+    { name = "logging",  email = "thecloudm8-scs-c03+logging@outlook.com" },
+    { name = "security", email = "thecloudm8-scs-c03+security@outlook.com" },
+    { name = "dev",      email = "thecloudm8-scs-c03+dev@outlook.com" },
+    { name = "prod",     email = "thecloudm8-scs-c03+prod@outlook.com" }
   ]
 }

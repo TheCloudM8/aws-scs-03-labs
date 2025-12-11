@@ -1,4 +1,3 @@
-```hcl
 terraform {
   required_version = ">= 1.6.0"
 
@@ -6,10 +5,10 @@ terraform {
     aws = {
       source  = "hashicorp/aws"
       version = "~> 5.70"
+    # works perfectly with 2025 services
     }
   }
 
-  # Remote backend – we’ll create the bucket manually first
   backend "s3" {
     bucket         = "thecloudm8-scs-c03-terraform-state"
     key            = "domain6-governance.tfstate"
